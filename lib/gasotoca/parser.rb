@@ -18,7 +18,7 @@ module Gasotoca
 
     # https://central3.to.gov.br/arquivo/550230/
     def initialize(url)
-      @reader = PDF::Reader.new(open(url))
+      @reader = PDF::Reader.new(URI.parse(url).open)
       @prices = {}
       @current_region_name = nil
     end
@@ -98,6 +98,6 @@ module Gasotoca
   end
 end
 
-parser = Gasotoca::Parser.new('https://central3.to.gov.br/arquivo/550230/')
-parser.extract_prices
-puts parser.prices_to_json
+# parser = Gasotoca::Parser.new('https://central3.to.gov.br/arquivo/550230/')
+# parser.extract_prices
+# puts parser.prices_to_json
