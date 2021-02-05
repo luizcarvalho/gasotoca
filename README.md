@@ -1,22 +1,21 @@
 # Gasotoca
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/gasotoca`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Projeto para buscar e transcrever preços das gasolinas praticadas em postos de Palmas.
+O script busca informações dos PDFs disponibilizados pelo Procon-TO
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Adicione essa linha no Gemfile de seu projeto:
 
 ```ruby
 gem 'gasotoca'
 ```
 
-And then execute:
+E execute isso:
 
     $ bundle install
 
-Or install it yourself as:
+Ou instale diretamente assim:
 
     $ gem install gasotoca
 
@@ -32,13 +31,10 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/gasotoca. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/gasotoca/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests são bem vindos no GitHub em https://github.com/luizcarvalho/gasotoca. Sua contribuição é  muito bem vinda, veja nosso [código de contuda (en)](https://github.com/luizcarvalho/gasotoca/blob/master/CODE_OF_CONDUCT.md).
 
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+Essa gem é disponibilizada como código aberto, nos termos da [Licensa MIT](https://opensource.org/licenses/MIT).
 
-## Code of Conduct
-
-Everyone interacting in the Gasotoca project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/gasotoca/blob/master/CODE_OF_CONDUCT.md).
