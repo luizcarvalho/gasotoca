@@ -1,0 +1,46 @@
+PATH
+  remote: .
+  specs:
+    gasotoca (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    Ascii85 (1.1.0)
+    afm (0.2.2)
+    diff-lcs (1.4.4)
+    hashery (2.1.2)
+    pdf-reader (2.4.2)
+      Ascii85 (~> 1.0)
+      afm (~> 0.2.1)
+      hashery (~> 2.0)
+      ruby-rc4
+      ttfunk
+    rake (12.3.3)
+    rspec (3.10.0)
+      rspec-core (~> 3.10.0)
+      rspec-expectations (~> 3.10.0)
+      rspec-mocks (~> 3.10.0)
+    rspec-core (3.10.1)
+      rspec-support (~> 3.10.0)
+    rspec-expectations (3.10.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.10.0)
+    rspec-mocks (3.10.2)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.10.0)
+    rspec-support (3.10.2)
+    ruby-rc4 (0.1.5)
+    ttfunk (1.7.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  gasotoca!
+  pdf-reader (~> 2.4)
+  rake (~> 12.0)
+  rspec (~> 3.0)
+
+BUNDLED WITH
+   2.1.4
