@@ -1,6 +1,15 @@
-require "gasotoca/version"
+require 'gasotoca/version'
+require 'gasotoca/error'
+require 'gasotoca/parser'
+require 'gasotoca/scraper'
 
 module Gasotoca
-  class Error < StandardError; end
+  class << self
+
+    def prices
+      'prices'
+    end
+
+  end
   # Your code goes here...
 end

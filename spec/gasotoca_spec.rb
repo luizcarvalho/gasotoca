@@ -1,9 +1,10 @@
 RSpec.describe Gasotoca do
-  it "has a version number" do
+  it 'has a version number' do
     expect(Gasotoca::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
+  it 'new' do
+    gastoca = Gasotoca.new
+    expect(gastoca).to eq('prices')
   end
 end

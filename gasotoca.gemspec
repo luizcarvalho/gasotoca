@@ -6,8 +6,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Luiz Carvalho']
   spec.email         = ['contato@luizcarvalho.com']
 
-  spec.summary       = 'TODO: Extrai informações de  valores  de combustíveis de Palmas'
-  spec.description   = 'TODO: Analisa do PDF com preços de combustíveis e disponibiliza em JSON'
+  spec.summary       = 'Extrai informações de  valores  de combustíveis de Palmas'
+  spec.description   = 'Analisa do PDF com preços de combustíveis e disponibiliza em JSON'
   spec.homepage      = 'https://luizcarvalho.com'
   spec.license       = 'MIT'
   spec.required_ruby_version = Gem::Requirement.new('>= 2.3.0')
