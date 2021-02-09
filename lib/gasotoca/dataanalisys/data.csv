@@ -1,0 +1,56 @@
+REGIAO;NOME;BANDEIRA;ENDERECO;GASOLINA;GASOLINA_A;ETANOL;DIESEL;DIESEL_S10
+Região Sul;Petrolíder 75 - 99284-7467;BAND. BRANCA;712 Sul - TO 050;4.999;4.999;3.76;3.699;3.699
+Região Sul;Auto Posto Eldorado 4 - 3225-4849;BR;Saida P/ Aparecida do Rio Negro;4.999;5.069;3.899;3.849;3.899
+Região Sul;Auto Posto Cantão - 3217-4010;SHELL;Próximo Rodoviária - 112 Sul;5.079;5.399;3.899;3.849;3.899
+Região Sul;Super Posto Líder - 3322-6722;BAND. BRANCA;1006 Sul, Av. NS 10, Lote 01;4.999;5.099;3.76;;3.799
+Região Sul;Rodoposto - 3228-9090/ 98488-131;BR;TO 050 - Próximo viaduto Rodoviária;4.969;4.999;3.75;3.71;3.72
+Região Sul;Posto San Marino - 3216-6600;IPIRANGA;806 Sul - NS 10 - ARSE 82 (Matriz);4.999;5.099;3.799;;3.799
+Região Sul;Posto Sagres - 98445-1376;BAND. BRANCA;Teotonio - Próximo Ginásio ULBRA;4.899;;3.599;3.8;3.83
+Região Sul;Petrolíder 112- 99284-7467;BAND. BRANCA;1106 Sul - NS 4;4.999;4.999;3.76;3.699;3.699
+Região Sul;Petrolíder Posto 71- 99284-7467;BAND. BRANCA;704 Sul - NS 4;4.999;4.999;3.76;3.699;3.699
+Região Sul;Posto Autovia - 3224-5196/5699;BR;Av. Palmas Brasil;5.11;5.16;4.01;;3.99
+Região Sul;Posto Star - 3214-5352;BAND. BRANCA;604 Sul - NS 2;4.999;;3.76;;3.799
+Região Sul;Petrolíder - 99284-7467;BAND. BRANCA;404 Sul - NS 2 - (ao lado do extra);4.999;4.999;3.76;3.699;3.699
+Região Sul;Posto Verão - 3219-6600;BR;402 Sul - Próx. Ao Coronel's Grill e Bar;5.099;5.199;3.899;3.959;3.999
+Região Sul;Auto Posto 61 - 3026-2599;BAND. BRANCA;Qd. 603 Sul, Av NS 01;4.999;;3.699;;3.799
+Região Sul;Perequeté - 98409-5011;BAND. BRANCA;612 Sul (Arse 75);4.969;;3.549;;3.699
+Região Sul;Auto Posto Araguaia - 3217-4287;SHELL;712 Sul Alameda 04 lote 61 QI- 03;5.079;5.329;3.899;3.749;3.799
+Região Sul;Posto Central - 3217-2356;SHELL;602 Sul - lo 13 -lado Defensoria Pública;4.979;;;;
+Região Sul;Posto J Ferro - 3233-1405;IPIRANGA;LO - 27 (ao lado da Eadcon);4.999;;3.999;;3.999
+Região Sul;Auto Posto Elite - 3217-1371;BR;804 sul, NS 04;5.149;5.209;;3.929;3.949
+Região Sul;Auto Posto Lago Sul - 99118-6996;IPIRANGA;501 Sul, Av. LO 11, conj. 02 11.24;5.098;5.198;3.899;;3.849
+Região Sul;Posto Flex Ltda - 3224-3044 (fechado);ALE;1103 s, av NS;;;;;
+Região Central;Posto Primavera - 3215-1199/3219-6600;BR;204 sul , Av. NS2 Lote 1;5.099;5.199;3.899;;3.999
+Região Central;Posto Casa Tua - 3213-3534/99916-4067;BAND. BRANCA;212 Sul - Av LO 3 c/TO 050;4.989;;3.759;3.699;3.699
+Região Central;;SHELL;110 Norte Av NS10 (Em frente ao Palacinho);5.09;;;;3.899
+Região Central;Auto Posto Eldorado - 3215-2224;BR;206 sul (Arse 22);4.999;5.079;3.899;3.799;3.849
+Região Central;Posto Jardins -3215-5163;IPIRANGA;207 Sul - acima BPM - HGP;4.998;5.099;3.899;;3.799
+Região Central;Petro (RTW) -99287-6507/99238-0423;BAND. BRANCA;NS - 01 - Em frente INSS;4.999;4.999;3.76;3.699;3.699
+Região Central;Auto Posto Cristal - 3213-1740;BAND. BRANCA;208 Sul;4.998;4.998;3.599;3.89;3.89
+Região Central;Posto Advento - 3225-2064;BAND. BRANCA;308 Sul - Fundos IFTO;4.98;5.08;;3.97;3.99
+Região Central;Posto Tucunaré - 99283-5852 / 99283-5869;BAND. BRANCA;110 Sul;4.94;4.94;3.59;3.7;3.73
+Região Central;Petrolíder 12- 99284-7467;BAND. BRANCA;105 Norte Av NS-03 (Igreja São Judas);4.999;4.999;3.76;3.699;3.699
+Taquaralto;Rodoposto II-98495-6210/3571-4035;BR;Av TO - Taquaralto;4.979;4.979;3.75;3.72;3.73
+Taquaralto;Super Petro - 98418-9697 (fechado);IPIRANGA;Av. Tocantins - Santa Fé;;;;;
+Taquaralto;Posto Modelo - 3571-5216/5205/3571-1652;BAND. BRANCA;Aureny III - Proximo entrada Aeroporto;4.999;5.199;3.699;;3.69
+Taquaralto;Auto Posto Serra do Carmo - 3571-4762/3571-4527;BR;Aureny I - Av. TO, QNE 14;5.099;5.149;3.85;3.949;3.999
+Taquaralto;Auto Posto Vitória - 3571-1295/ 98456-4799;BAND. BRANCA;Santa Fé - II Etapa - saída Taquaruçu;5.159;5.169;3.889;3.909;3.929
+Taquaralto;Auto Posto Araguaia - 35718551/84409294 (fechado);SHELL;Av. B QD 40 Lt 14 - Jardim Aureny IV;;;;;
+Taquaralto;Auto Posto Vitória Modelo - 3571 -7518;BAND. BRANCA;Av. I , Jardim Aureny III, s/n;4.999;4.999;3.699;;3.69
+Taquaralto;Posto Disbrava Campeão -3571-4621;IPIRANGA;Rua Pernambuco Aureny I;5.099;5.199;3.899;;3.849
+Taquaralto;Posto Tocantins - 3571-9147 / 3571-2575;BR;Av. Tocantins;4.99;5.03;3.89;3.85;3.85
+Taquaralto;Posto Modelo 3571-1049/1047;BAND. BRANCA;Rod. TO 50 km 18 Qd 25 PAC LTs 5 e 10;4.999;4.999;3.799;3.749;3.749
+Taquaralto;Posto Araguaia - 3225-0397 (fechado);BAND. BRANCA;AV.Taquarassú, Qd. 40, lt 11 s/nº - Taquaralto;;;;;
+Taquaralto;Posto Aerotrevo - 3224-1919/9947-0622;SHELL;Av. T. Segurado, Trevo Aeroporto;4.999;5.299;3.99;3.949;3.949
+Taquaruçu;Auto Posto Vitória III - 3554-1407/98498-9662;BAND. BRANCA;Taquaruçu;4.969;4.969;3.69;3.759;3.769
+Taquaruçu;Auto Posto Quatro Rodas - 98418-9697/ 98416-9697;BAND. BRANCA;Taquari;4.949;4.949;;;
+Taquaruçu;Auto Posto Taquari - 98147-2699;BAND. BRANCA;Quadra T31, TLO 05, conj. 01, L-2, lote 04;4.97;4.99;3.66;3.77;3.79
+Taquaruçu;Posto Líder - 3224-5201 (fechado);BR;404 N - Av. NS 2 (Prox. A Justiça do Trabalho);;;;;
+Taquaruçu;Auto Posto Palacinho - 3215-7898/3215-3517;BR;408 Norte NS-10 (Prox ao Posto JK);5.099;5.149;3.85;3.959;3.999
+Taquaruçu;Posto Serra Geral - 99244-4506;BAND. BRANCA;501 Norte - Av NS 01;4.979;;3.599;3.699;3.699
+Taquaruçu;Posto Disbrava -98132-0266/ 98442-0281 /3215-7222;IPIRANGA;QD 106 N AL 17 LT 24 AV NS 06 ARNE 12;5.099;5.199;3.899;;3.849
+Taquaruçu;Auto Posto Leal - 3322-1803/3322-1805;BR;506 Norte Av 508- s/n;5.09;5.11;3.79;3.79;3.79
+Taquaruçu;Posto Petroshop - 3571-2051;IPIRANGA;412 N Rod. TO Pac 01 lt 01;4.989;4.989;3.759;3.699;3.699
+Taquaruçu;Auto Posto Eldorado da 32 - 3224-1060;BR;305 Norte Av NS-05;4.999;5.069;3.899;3.879;3.899
+Taquaruçu;Auto Posto Disbrava -3571-4390;IPIRANGA;405 Norte AL 07;5.099;5.199;3.899;;3.849
+Taquaruçu;Posto Disbrava - 3225 - 6777;IPIRANGA;101 Norte Av NS 1 nº 1;5.099;5.199;3.899;;3.849

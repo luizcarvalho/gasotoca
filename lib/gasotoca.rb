@@ -2,25 +2,14 @@ require 'gasotoca/version'
 require 'gasotoca/error'
 require 'gasotoca/parser'
 require 'gasotoca/scraper'
+require 'gasotoca/laster'
+require 'gasotoca/gas_station'
 
 module Gasotoca
   class << self
-
-    def prices
-      prices_in_json
+    def find(fuel, **filters)
+      gas_station = GasStation.new
+      gas_station.find(fuel, filters)
     end
-
-    def prices_in_json
-      parser = Gasotoca::Parser.new(last_pdf_link)
-      parser.extract_prices
-      parser.prices_to_json
-    end
-
-    def last_pdf_link
-      data = Scraper.new.collect_data
-      data.last[:link]
-    end
-
   end
-  # Your code goes here...
 end

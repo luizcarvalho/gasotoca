@@ -3,9 +3,12 @@
 require 'open-uri'
 require 'pdf-reader'
 require 'json'
+require 'pry'
 
 module Gasotoca
   class Parser
+    attr_accessor :prices
+
     NOME_SIZE	= 55
     BANDEIRA_SIZE = 14
     ENDERECO_SIZE = 50
@@ -19,7 +22,7 @@ module Gasotoca
     # https://central3.to.gov.br/arquivo/550230/
     def initialize(url)
       @reader = PDF::Reader.new(URI.parse(url).open)
-      @prices = {}
+      @prices = []
       @current_region_name = nil
     end
 
@@ -36,24 +39,21 @@ module Gasotoca
       @prices.to_json
     end
 
+    # {a: 1, b: 11}, {a: 2, b: 12}, {a: 3, b: 13}, {a: 4, b: 14}, {a: 5, b: 15}]
     def analize_line(line)
       header = region(line)
       price_line = price_line?(line)
 
       if header
-        create_region(header)
+        @current_region_name = header
       elsif price_line
         add_prices_info_to(line)
       end
     end
 
-    def create_region(header)
-      @current_region_name = header
-      @prices.store(@current_region_name, [])
-    end
-
     def add_prices_info_to(line)
-      @prices[@current_region_name] << extract_info(line)
+      info_hash = extract_info(line)
+      @prices << { regiao: @current_region_name }.merge(info_hash) if info_hash
     end
 
     def region(line)
@@ -65,7 +65,7 @@ module Gasotoca
     end
 
     def bandeira(line)
-      bandeira_name = line[/(BAND\. BRANCA|BR|SHELL|IPIRANGA|I4IR659A4)/, 1]
+      bandeira_name = line[/(BAND\. BRANCA|BR|SHELL|IPIRANGA|I4IR659A4|ALE)/, 1]
       bandeira_name == 'I4IR659A4' ? 'IPIRANGA' : bandeira_name
     end
 
@@ -89,7 +89,8 @@ module Gasotoca
         hash[atributo] = if i < 3
                            info_array[i + 1]&.strip
                          else
-                           info_array[i + 1].gsub(',', '.').to_f
+                           value = info_array[i + 1].gsub(',', '.').to_f
+                           value.zero? ? nil : value
                          end
       end
 

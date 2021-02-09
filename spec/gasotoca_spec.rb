@@ -3,11 +3,15 @@ RSpec.describe Gasotoca do
     expect(Gasotoca::VERSION).not_to be nil
   end
 
-  it 'last_pdf_link is a link' do
-    expect(Gasotoca.last_pdf_link).to match(/http/)
+  it 'find by fuel' do
+    expect(Gasotoca.find(:gasolina)).to be_kind_of(Array)
   end
 
-  it 'prices have bandeiras' do
-    expect(Gasotoca.prices).to match(/IPIRANGA/)
+  it 'find by fuel and bandeira' do
+    expect(Gasotoca.find(:gasolina, bandeira: 'BR')).to be_kind_of(Array)
+  end
+
+  it 'find by fuel and bandeira and região' do
+    expect(Gasotoca.find(:gasolina, bandeira: 'BR', regiao: 'Região Sul')).to be_kind_of(Array)
   end
 end
