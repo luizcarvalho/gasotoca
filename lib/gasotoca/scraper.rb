@@ -48,6 +48,8 @@ module Gasotoca
     end
 
     def convert_date(date_name)
+      return Date.new unless date_name
+
       day = extract_day(date_name)
       date_name.gsub!("#{day} de ", '')
       month = convert_month_name(date_name)
