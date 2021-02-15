@@ -21,7 +21,23 @@ Ou instale diretamente assim:
 
 ## Usage
 
-TODO: Write usage instructions here
+Buscar preços por combustível
+
+```ruby
+Gasotoca.find(:gasolina)
+```
+
+Buscar preço por combustível e por bandeira
+
+```ruby
+Gasotoca.find(:gasolina, bandeira: 'BR')
+```
+
+Buscar preço por combustível, bandeira e região
+
+```ruby
+Gasotoca.find(:gasolina, bandeira: 'BR', regiao: 'Região Sul')
+```
 
 ## Development
 
