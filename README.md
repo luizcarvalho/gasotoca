@@ -39,6 +39,81 @@ Buscar preço por combustível, bandeira e região
 Gasotoca.find(:gasolina, bandeira: 'BR', regiao: 'Região Sul')
 ```
 
+## Resultados esperados
+
+
+🏆 TOP 3 GASOLINAS MAIS BARATAS DE PALMAS (USANDO APPS)
+
+💲 R$ 5.359
+⛽ [BR] Posto Autovia - 3224-5196/5699
+📍804 sul, NS 04
+
+💲 R$ 5.359
+⛽ [BR] Posto Autovia - 3224-5196/5699
+📍804 sul, NS 04
+
+💲 R$ 5.359
+⛽ [BR] Posto Autovia - 3224-5196/5699
+📍804 sul, NS 04
+
+Fonte: #proconTO
+
+
+🏆 TOP 3 GASOLINAS MAIS BARATAS* DE PALMAS
+
+💲 R$ 5.359
+⛽ [BR] Posto Autovia - 3224-5196/5699
+📍804 sul, NS 04
+
+💲 R$ 5.359
+⛽ [BR] Posto Autovia - 3224-5196/5699
+📍804 sul, NS 04
+
+💲 R$ 5.359
+⛽ [BR] Posto Autovia - 3224-5196/5699
+📍804 sul, NS 04
+
+Fonte: #proconTO
+
+
+
+🏆 TOP 3 GASOLINAS MAIS BARATAS REGIÃO SUL
+
+💲 R$ 5.359
+⛽ [BR] Posto Autovia - 3224-5196/5699
+📍804 sul, NS 04
+
+💲 R$ 5.359
+⛽ [BR] Posto Autovia - 3224-5196/5699
+📍804 sul, NS 04
+
+💲 R$ 5.359
+⛽ [BR] Posto Autovia - 3224-5196/5699
+📍804 sul, NS 04
+
+Fonte: #proconTO
+
+
+
+
+🏆 TOP 3 GASOLINAS MAIS BARATAS BR NA REGIÃO SUL
+
+💲 R$ 5.359
+⛽ [BR] Posto Autovia - 3224-5196/5699
+📍804 sul, NS 04
+
+💲 R$ 5.359
+⛽ [BR] Posto Autovia - 3224-5196/5699
+📍804 sul, NS 04
+
+💲 R$ 5.359
+⛽ [BR] Posto Autovia - 3224-5196/5699
+📍804 sul, NS 04
+
+Fonte: #proconTO
+
+
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
