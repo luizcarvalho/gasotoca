@@ -4,16 +4,15 @@ RSpec.describe Gasotoca do
   end
 
   it 'find by fuel' do
-    expect(Gasotoca.find(:gasolina)).to be_kind_of(Array)
+    expect(Gasotoca.find(:gasoline)).to be_kind_of(Array)
   end
 
-  it 'find by fuel and bandeira' do
-    expect(Gasotoca.find(:gasolina, bandeira: 'BR')).to be_kind_of(Array)
+  it 'find by fuel and flag' do
+    expect(Gasotoca.find(:gasoline, flag: 'BR')).to be_kind_of(Array)
   end
 
-  it 'find by fuel and bandeira and região' do
-    ranking = Gasotoca.find(:gasolina, bandeira: 'BR', regiao: 'Região Sul')
-    puts ranking
+  it 'find by fuel and flag and region' do
+    ranking = Gasotoca.find(:gasoline, flag: 'BR', region: 'Região Sul')
     expect(ranking).to be_kind_of(Array)
   end
 end

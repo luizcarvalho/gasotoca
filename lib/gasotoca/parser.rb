@@ -9,15 +9,15 @@ module Gasotoca
   class Parser
     attr_accessor :prices
 
-    NOME_SIZE	= 55
-    BANDEIRA_SIZE = 14
-    ENDERECO_SIZE = 50
-    GASOLINA_SIZE = 14
-    GASOLINA_A_SIZE	= 13
-    ETANOL_SIZE = 13
+    NAME_SIZE	= 55
+    FLAG_SIZE = 14
+    ADDRESS_SIZE = 50
+    GASOLINE_SIZE = 14
+    GASOLINE_A_SIZE	= 13
+    ETHANOL_SIZE = 13
     DIESEL_SIZE = 14
     DIESEL_S10_SIZE	= 13
-    PRICES_ATTRIBUTES =	%i[nome bandeira endereco gasolina gasolina_aditivada etanol diesel disel_s10].freeze
+    PRICES_ATTRIBUTES =	%i[name flag address gasoline gasoline_a ethanol diesel disel_s10].freeze
 
     # https://central3.to.gov.br/arquivo/550230/
     def initialize(url)
@@ -53,7 +53,7 @@ module Gasotoca
 
     def add_prices_info_to(line)
       info_hash = extract_info(line)
-      @prices << { regiao: @current_region_name }.merge(info_hash) if info_hash
+      @prices << { region: @current_region_name }.merge(info_hash) if info_hash
     end
 
     def region(line)
@@ -61,12 +61,12 @@ module Gasotoca
     end
 
     def price_line?(line)
-      bandeira(line)
+      flag(line)
     end
 
-    def bandeira(line)
-      bandeira_name = line[/(BAND\. BRANCA|BR|SHELL|IPIRANGA|I4IR659A4|ALE)/, 1]
-      bandeira_name == 'I4IR659A4' ? 'IPIRANGA' : bandeira_name
+    def flag(line)
+      flag_name = line[/(BAND\. BRANCA|BR|SHELL|IPIRANGA|I4IR659A4|ALE)/, 1]
+      flag_name == 'I4IR659A4' ? 'IPIRANGA' : flag_name
     end
 
     def extract_info(line)
@@ -75,8 +75,8 @@ module Gasotoca
     end
 
     def split_line(line)
-      info_pattern = "(.{#{NOME_SIZE}})(.{#{BANDEIRA_SIZE}})(.{#{ENDERECO_SIZE}})"
-      price_pattern = "(.{#{GASOLINA_SIZE}})(.{#{GASOLINA_A_SIZE}})(.{#{ETANOL_SIZE}})(.{#{DIESEL_SIZE}})"
+      info_pattern = "(.{#{NAME_SIZE}})(.{#{FLAG_SIZE}})(.{#{ADDRESS_SIZE}})"
+      price_pattern = "(.{#{GASOLINE_SIZE}})(.{#{GASOLINE_A_SIZE}})(.{#{ETHANOL_SIZE}})(.{#{DIESEL_SIZE}})"
       extract_pattern = Regexp.new(info_pattern + price_pattern)
 
       line.split(extract_pattern)

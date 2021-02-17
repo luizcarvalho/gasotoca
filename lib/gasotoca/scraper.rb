@@ -1,15 +1,18 @@
 require 'open-uri'
 require 'date'
 
-BASE_URL = 'https://procon.to.gov.br/servicos/pesquisa-de-precos/-pesquisas-de-precos'.freeze
-YEAR = Time.new.year
-PATH = 'combustivel-palmas-/'.freeze
-FULL_URL = "#{BASE_URL}-#{YEAR}/#{PATH}".freeze
-LINKS_REGEX = %r{<li><a href="(https://central3\.to\.gov\.br/arquivo/\d*)/">(.*)</a>}.freeze
-MONTHS = %w[Janeiro Fevereiro Março Abril Maio Junho Julho Agosto Setembro Outubro Novembro Dezembro].freeze
 
 module Gasotoca
   class Scraper
+
+    BASE_URL = 'https://procon.to.gov.br/servicos/pesquisa-de-precos/-pesquisas-de-precos'.freeze
+    YEAR = Time.new.year
+    PATH = 'combustivel-palmas-/'.freeze
+    FULL_URL = "#{BASE_URL}-#{YEAR}/#{PATH}".freeze
+    LINKS_REGEX = %r{<li><a href="(https://central3\.to\.gov\.br/arquivo/\d*)/">(.*)</a>}.freeze
+    MONTHS = %w[Janeiro Fevereiro Março Abril Maio Junho Julho Agosto Setembro Outubro Novembro Dezembro].freeze
+
+
     def initialize
       @data_links = []
     end
