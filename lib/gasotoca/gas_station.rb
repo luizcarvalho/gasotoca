@@ -13,7 +13,7 @@ module Gasotoca
       if filtered.size.zero?
         []
       else
-        filtered.to_a[0][0..5]
+        filtered.to_a[0]
       end
     end
 
