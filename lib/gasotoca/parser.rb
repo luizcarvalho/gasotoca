@@ -3,7 +3,6 @@
 require 'open-uri'
 require 'pdf-reader'
 require 'json'
-require 'pry'
 
 module Gasotoca
   class Parser
